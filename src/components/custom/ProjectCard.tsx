@@ -7,3 +7,5 @@ const ProjectCard = () => {
         </Card>
     )
 }
+
+export default ProjectCard;
