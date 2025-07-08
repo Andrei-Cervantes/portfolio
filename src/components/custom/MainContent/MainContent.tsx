@@ -1,6 +1,6 @@
 const MainContent = () => {
     return (
-        <main>MainContent</main>
+        <main className="flex-1">MainContent</main>
     )
 }
 
