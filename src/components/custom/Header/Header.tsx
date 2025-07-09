@@ -2,7 +2,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 
 const Header = () => {
     return (
-        <header className="w-full bg-background text-text-primary shadow-md px-4 justify-end flex items-center h-16">
+        <header className="w-full bg-accent text-text-primary shadow-md px-4 justify-end flex items-center h-16">
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem>
