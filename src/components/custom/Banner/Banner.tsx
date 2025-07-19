@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["web developer", "designer", "content creator"];
+    const toRotate = ["Web Developer", "Competitive Gamer", "Nap Enthusiast"];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -41,10 +41,10 @@ const Banner = () => {
         <section id="home" className="mt-0 pt-[260px] pb-[100px]">
             <div className="flex items-center">
                 <div>
-                    <span className="font-bold tracking-wider px-2 py-3 border-1">Welcome to my Portfolio</span>
-                    <h1>{`Hi I'm webcoded `}<span>{text}</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum magni culpa est, laudantium soluta eveniet, quo adipisci tenetur amet quidem, blanditiis aut dolores debitis! Maxime corrupti debitis esse magnam pariatur!</p>
-                    <button onClick={() => console.log('connect')}>Let's connect</button>
+                    <span className="font-bold tracking-wider px-2 py-3 border-1 border-white/50 bg-custom-gradient inline-block mb-4 text-[1.25rem]">Welcome to my Portfolio</span>
+                    <h1 className="text-[4rem] font-bold mb-5 tracking-wider">{`Hi I'm Andrei, a `}<span>{text}</span></h1>
+                    <p className="text-[#b8b8b8] leading-[1.5em] w-[96%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum magni culpa est, laudantium soluta eveniet, quo adipisci tenetur amet quidem, blanditiis aut dolores debitis! Maxime corrupti debitis esse magnam pariatur!</p>
+                    <button className="text-white font-bold text-xl mt-16 tracking-wider flex items-center hover:underline underline-offset-2" onClick={() => console.log('connect')}>Let's connect</button>
                 </div>
                 <div>
                     {/* place image */}
