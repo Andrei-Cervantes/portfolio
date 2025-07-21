@@ -1,14 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #000000;
-    --color-secondary: #000000;
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #11071F;
-    --color-background: #11071F;
-    --color-background-secondary: #ffffff;
-    --color-accent: #1A0B2E;
-    --color-accent-secondary: #000000;
+  --color-primary: #000000;
+  --color-secondary: #000000;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #11071f;
+  --color-background: #11071f;
+  --color-background-secondary: #ffffff;
+  --color-accent: #1a0b2e;
+  --color-accent-secondary: #000000;
+}
+
+/* Fonts */
+.font-fredoka {
+  font-family: "Fredoka", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 
 @layer utilities {
