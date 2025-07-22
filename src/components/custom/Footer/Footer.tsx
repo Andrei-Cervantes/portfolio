@@ -2,6 +2,7 @@ import footerBG from "../../../assets/footer-bg.png";
 
 const Footer = () => {
   return (
+    // contact
     <footer
       className="p-6 flex items-center justify-between gap-6 min-h-[600px] relative"
       style={{
