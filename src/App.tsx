@@ -1,6 +1,6 @@
-import MainContent from "./components/custom/MainContent/MainContent";
-import Footer from "./components/custom/Footer/Footer";
-import Banner from "./components/custom/Banner/Banner";
+import MainContent from "@/components/custom/mainContent/MainContent";
+import Footer from "@/components/custom/footer/Footer";
+import Banner from "@/components/custom/banner/Banner";
 
 const App = () => {
   return (
