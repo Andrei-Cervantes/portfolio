@@ -2,23 +2,23 @@ import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   const sequence = [
-    "Web Developer",
+    "a Web Developer",
     3000,
-    "Competitive Gamer",
+    "a Competitive Gamer",
     1000,
-    "Nap Enthusiast",
+    "a Nap Enthusiast",
     2000,
   ];
 
   return (
-    <section id="home" className="mt-0 pt-[260px] pb-[100px]">
-      <div className="flex items-center">
-        <div>
-          <span className="font-bold tracking-wider px-2 py-3 border-1 border-white/50 bg-custom-gradient inline-block mb-4 text-[1.25rem]">
+    <section id="home" className="mt-0 pt-[260px] pb-[100px] px-10">
+      <div className="flex items-center flex-col md:flex-row">
+        <div className="w-3/4">
+          <span className="font-bold tracking-wider px-2 py-3 border-1 border-white/50 bg-custom-gradient inline-block mb-4">
             Welcome to my Portfolio
           </span>
-          <h1 className="text-[4rem] font-bold mb-5 tracking-wider">
-            {`Hi I'm Andrei, a `}
+          <h1 className="font-bold mb-5 min-h-[72px] flex gap-2 flex-col">
+            Hi I'm Andrei,
             <TypeAnimation
               sequence={sequence}
               wrapper="span"
@@ -39,9 +39,9 @@ const Banner = () => {
             Let's connect
           </button>
         </div>
-        <div>
+        <div className="flex-1 flex justify-center items-center">
           {/* place image */}
-          <div className="w-10 h-10 bg-red-500" />
+          <div className="w-full bg-red-500" />
         </div>
       </div>
     </section>
