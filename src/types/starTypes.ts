@@ -5,6 +5,7 @@ export type Star = {
   y: number;
   opacity: number;
   animationDuration: number;
+  background: string;
 };
 
 export type Meteor = Star;

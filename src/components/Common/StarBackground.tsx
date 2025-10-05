@@ -1,6 +1,16 @@
 import { useEffect, useState } from "react";
 import { type Star, type Meteor } from "../../types/starTypes";
 
+const starColors = [
+  "rgba(155, 176, 255, 1)", // O - blue (very hot)
+  "rgba(170, 191, 255, 1)", // B - blue-white
+  "rgba(202, 215, 255, 1)", // A - white
+  "rgba(248, 247, 255, 1)", // F - yellow-white
+  "rgba(255, 244, 234, 1)", // G - pale yellow (like our Sun)
+  "rgba(255, 210, 161, 1)", // K - orange
+  "rgba(255, 178, 107, 1)", // M - red-orange (coolest)
+];
+
 const StarBackground = () => {
   const [stars, setStars] = useState<Star[]>([]);
   const [meteors, setMeteors] = useState<Meteor[]>([]);
@@ -20,6 +30,7 @@ const StarBackground = () => {
         y: Math.random() * 100,
         opacity: Math.random() * 0.5 + 0.5,
         animationDuration: Math.random() * 4 + 2,
+        background: starColors[Math.floor(Math.random() * starColors.length)],
       });
     }
 
@@ -39,6 +50,7 @@ const StarBackground = () => {
         y: Math.random() * 20,
         opacity: Math.random() * 15,
         animationDuration: Math.random() * 3 + 3,
+        background: "white",
       });
     }
 
@@ -73,6 +85,7 @@ const StarBackground = () => {
             top: `${star.y}%`,
             opacity: star.opacity,
             animationDuration: `${star.animationDuration}s`,
+            background: star.background,
           }}
         />
       ))}
