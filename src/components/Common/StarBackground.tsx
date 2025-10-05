@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { type Star, type Meteor } from "../types/starTypes";
+import { type Star, type Meteor } from "../../types/starTypes";
 
 const StarBackground = () => {
   const [stars, setStars] = useState<Star[]>([]);
