@@ -1,47 +1,96 @@
-import { useState } from "react";
-import { type Skill } from "../../types/skillTypes";
-import { cn } from "../../lib/utils";
+// import { useState } from "react";
+// import { type Skill } from "../../types/skillTypes";
+// import { cn } from "../../lib/utils";
 
-const skills: Skill[] = [
-  // 🧠 Frontend
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "React.js", level: 88, category: "frontend" },
-  { name: "Next.js", level: 82, category: "frontend" },
-  { name: "TailwindCSS", level: 87, category: "frontend" },
-  { name: "shadcn/ui", level: 75, category: "frontend" },
-  { name: "Bootstrap", level: 70, category: "frontend" },
-  { name: "Framer Motion", level: 72, category: "frontend" },
-  { name: "Zustand", level: 78, category: "frontend" },
-  { name: "TanStack Query", level: 80, category: "frontend" },
+import { IconCloud } from "../ui/IconCloud";
 
-  // ⚙️ Backend
-  { name: "Node.js", level: 85, category: "backend" },
-  { name: "Express.js", level: 82, category: "backend" },
-  { name: "MongoDB", level: 78, category: "backend" },
-  { name: "Postman", level: 80, category: "backend" },
+// const skills: Skill[] = [
+//   // 🧠 Frontend
+//   { name: "JavaScript", level: 90, category: "frontend" },
+//   { name: "TypeScript", level: 85, category: "frontend" },
+//   { name: "React.js", level: 88, category: "frontend" },
+//   { name: "Next.js", level: 82, category: "frontend" },
+//   { name: "TailwindCSS", level: 87, category: "frontend" },
+//   { name: "shadcn/ui", level: 75, category: "frontend" },
+//   { name: "Bootstrap", level: 70, category: "frontend" },
+//   { name: "Framer Motion", level: 72, category: "frontend" },
+//   { name: "Zustand", level: 78, category: "frontend" },
+//   { name: "TanStack Query", level: 80, category: "frontend" },
 
-  // 🧰 Tools & Workflow
-  { name: "Git & GitHub", level: 88, category: "tools" },
-  { name: "Figma", level: 72, category: "design" },
+//   // ⚙️ Backend
+//   { name: "Node.js", level: 85, category: "backend" },
+//   { name: "Express.js", level: 82, category: "backend" },
+//   { name: "MongoDB", level: 78, category: "backend" },
+//   { name: "Postman", level: 80, category: "backend" },
+
+//   // 🧰 Tools & Workflow
+//   { name: "Git & GitHub", level: 88, category: "tools" },
+//   { name: "Figma", level: 72, category: "design" },
+// ];
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "react",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "vercel",
+  "git",
+  "jira",
+  "github",
+  "visualstudiocode",
+  "figma",
 ];
 
 const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
-  const categories = ["all", ...new Set(skills.map((skill) => skill.category))];
-  const filteredSkills = skills.filter(
-    (skill: Skill) =>
-      activeCategory === "all" || skill.category === activeCategory
+  // const [activeCategory, setActiveCategory] = useState("all");
+  // const categories = ["all", ...new Set(skills.map((skill) => skill.category))];
+  // const filteredSkills = skills.filter(
+  //   (skill: Skill) =>
+  //     activeCategory === "all" || skill.category === activeCategory
+  // );
+
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   );
 
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary">Skills</span>
+          <span className="text-primary">Skills</span> and{" "}
+          <span className="text-primary">Experience</span>
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center mb-12">
+          <div className="space-y-4">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Veritatis deleniti sequi animi cumque dicta ipsa ullam
+              repellendus, voluptate consequatur, molestiae non doloremque quia
+              esse enim eum debitis voluptatem sapiente possimus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae libero dolorum aperiam nam, voluptate dolores porro
+              totam nihil sunt esse!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+              quam nihil accusamus quaerat obcaecati deserunt magnam provident
+              doloremque, autem dolorem cumque voluptatibus nemo, unde nostrum
+              corrupti similique ea. Ipsum, ratione.
+            </p>
+          </div>
+          <div className="relative flex size-full items-center justify-center overflow-hidden">
+            <IconCloud images={images} />
+          </div>
+        </div>
+
+        {/* <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (
             <button
               key={key}
@@ -81,7 +130,7 @@ const SkillsSection = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

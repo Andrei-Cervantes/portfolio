@@ -63,6 +63,17 @@
       opacity: 0;
     }
   }
+
+  @keyframes spread {
+    0% {
+      background-size: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      background-size: 200% 200%;
+      opacity: 0;
+    }
+  }
 }
 
 @layer base {
@@ -162,4 +173,10 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+}
+
+.animate-spread {
+  animation: spread 3s ease-out infinite;
+  background-repeat: no-repeat;
+  background-position: center;
 }
