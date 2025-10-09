@@ -23,7 +23,7 @@ const ContactsSection = () => {
           dolorum nulla ratione.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center">
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
@@ -32,7 +32,7 @@ const ContactsSection = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
-                <div className="">
+                <div className="text-start">
                   <h4 className="font-medium">Email</h4>
                   <a
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -46,7 +46,7 @@ const ContactsSection = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
-                <div className="">
+                <div className="text-start">
                   <h4 className="font-medium">Phone</h4>
                   <a
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -60,7 +60,7 @@ const ContactsSection = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
-                <div className="">
+                <div className="text-start">
                   <h4 className="font-medium">Location</h4>
                   <p className="text-muted-foreground hover:text-primary transition-colors">
                     Manila, Philippines
