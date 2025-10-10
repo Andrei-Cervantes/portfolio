@@ -8,6 +8,7 @@ import {
   Twitter,
 } from "lucide-react";
 import { cn } from "../../lib/utils";
+import astronaut from "../../assets/astronaut.png";
 
 const ContactsSection = () => {
   return (
@@ -23,8 +24,8 @@ const ContactsSection = () => {
           dolorum nulla ratione.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center">
-          <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center">
+          {/* <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
             <div className="space-y-6 justify-center">
@@ -81,6 +82,51 @@ const ContactsSection = () => {
                 <a href="" target="_blank">
                   <Facebook />
                 </a>
+              </div>
+            </div>
+          </div> */}
+
+          <div className="space-y-8 flex flex-col items-center">
+            <img
+              className="animate-float w-[342px] h-[342px]"
+              src={astronaut}
+              alt="astronaut"
+            />
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-6">
+                Contact Information
+              </h3>
+              <div className="flex items-center justify-center gap-4 transition-all duration-500">
+                {/* Email */}
+                <div className="flex items-center gap-2 group cursor-pointer transition-all duration-500 overflow-hidden hover:w-[280px] w-[56px]">
+                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 shrink-0">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground group-hover:text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
+                    andrei29.cervantes@gmail.com
+                  </p>
+                </div>
+
+                {/* Phone */}
+                <div className="flex items-center gap-2 group cursor-pointer transition-all duration-500 overflow-hidden hover:w-[200px] w-[56px]">
+                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 shrink-0">
+                    <Phone className="h-6 w-6 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground group-hover:text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
+                    +63 915 650 6046
+                  </p>
+                </div>
+
+                {/* Location */}
+                <div className="flex items-center gap-2 group cursor-pointer transition-all duration-500 overflow-hidden hover:w-[220px] w-[56px]">
+                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 shrink-0">
+                    <MapPin className="h-6 w-6 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground group-hover:text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
+                    Manila, Philippines
+                  </p>
+                </div>
               </div>
             </div>
           </div>
