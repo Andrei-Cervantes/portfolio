@@ -316,7 +316,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
-      className="rounded-full bg-[radial-gradient(circle,rgba(0,128,255,0.4)_0%,rgba(0,128,255,0)_70%)] animate-spread"
+      className="rounded-full"
       aria-label="Interactive 3D Icon Cloud"
       role="img"
     />
