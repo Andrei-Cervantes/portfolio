@@ -33,21 +33,19 @@ const SkillsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center mb-12">
           <div className="space-y-4">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis deleniti sequi animi cumque dicta ipsa ullam
-              repellendus, voluptate consequatur, molestiae non doloremque quia
-              esse enim eum debitis voluptatem sapiente possimus.
+              A frontend developer focused on building clean, efficient, and
+              maintainable web applications using React, Next.js, and Electron.
+              Familiar with feature-based architecture, Zustand for state
+              management, and Shadcn/UI for building consistent and reusable
+              interfaces. Experienced working in Agile (Scrum) teams and
+              collaborating with different disciplines to develop reliable and
+              user-friendly frontends.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae libero dolorum aperiam nam, voluptate dolores porro
-              totam nihil sunt esse!
-            </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-              quam nihil accusamus quaerat obcaecati deserunt magnam provident
-              doloremque, autem dolorem cumque voluptatibus nemo, unde nostrum
-              corrupti similique ea. Ipsum, ratione.
+              Enjoys improving code structure, exploring frontend architecture,
+              and finding ways to make development workflows more efficient.
+              Constantly learning and refining skills to build applications that
+              balance performance, scalability, and maintainability.
             </p>
           </div>
           <div className="relative flex size-full items-center justify-center overflow-hidden">
