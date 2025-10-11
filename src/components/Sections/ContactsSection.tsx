@@ -1,12 +1,4 @@
-import {
-  Facebook,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  Twitter,
-} from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { cn } from "../../lib/utils";
 import astronaut from "../../assets/astronaut.png";
 
@@ -25,67 +17,6 @@ const ContactsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center">
-          {/* <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-
-            <div className="space-y-6 justify-center">
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-start">
-                  <h4 className="font-medium">Email</h4>
-                  <a
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    href="mailto:andrei29.cervantes@gmail.com"
-                  >
-                    andrei29.cervantes@gmail.com
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-start">
-                  <h4 className="font-medium">Phone</h4>
-                  <a
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    href="tel:+639156506046"
-                  >
-                    +63 915 650 6046
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-start">
-                  <h4 className="font-medium">Location</h4>
-                  <p className="text-muted-foreground hover:text-primary transition-colors">
-                    Manila, Philippines
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-8">
-              <h4 className="font-medium mb-4">Connect With Me</h4>
-              <div className="flex space-x-4 justify-center">
-                <a href="" target="_blank">
-                  <Linkedin />
-                </a>
-                <a href="" target="_blank">
-                  <Twitter />
-                </a>
-                <a href="" target="_blank">
-                  <Facebook />
-                </a>
-              </div>
-            </div>
-          </div> */}
-
           <div className="space-y-8 flex flex-col items-center">
             <img
               className="animate-float w-[342px] h-[342px]"
