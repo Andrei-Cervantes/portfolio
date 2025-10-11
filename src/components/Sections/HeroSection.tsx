@@ -21,9 +21,12 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum
-            qui nisi dolor, quibusdam, ab similique cumque tempora eveniet,
-            maiores voluptatum!
+            <span className="text-primary">
+              Frontend Developer | Gamer | Always chasing the next upgrade.
+            </span>{" "}
+            Turning code into well-balanced builds — focused on creating clean,
+            scalable, and efficient applications with the same passion used to
+            optimize every in-game setup.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
