@@ -13,21 +13,25 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & MMO Enthusiast
+              Passionate Web Developer who treats code like a well-balanced game
+              build.
             </h3>
 
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-              voluptas ullam suscipit, optio possimus facilis modi, voluptates
-              iure a harum eligendi nemo pariatur quos obcaecati numquam ad quod
-              veniam error.
+              Known online as Gekk (or sometimes Eris), a gamer at heart and a
+              developer by craft — combining both passions through a love for
+              optimization, structure, and continuous improvement. Whether
+              refining code architecture, improving workflows, or enhancing
+              performance, each project is another chance to chase the next
+              upgrade.
             </p>
 
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quod
-              assumenda quae sapiente harum ullam, numquam repudiandae molestias
-              fugit! Vero corporis qui repellendus nisi? Beatae officiis quos
-              nulla minima quo!
+              With experience building applications using React, Next.js, and
+              Electron, and a focus on feature-based architecture, Zustand, and
+              Shadcn/UI, the goal is always to create systems that are
+              efficient, scalable, and enjoyable to work with — just like a
+              perfectly balanced game build.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
