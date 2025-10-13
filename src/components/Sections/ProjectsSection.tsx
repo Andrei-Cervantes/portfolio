@@ -1,67 +1,5 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-
-const projects = [
-  {
-    id: 1,
-    title: "Project One",
-    description:
-      "Description for project one. This project is awesome. This project is so fun to do.",
-    image: "https://placehold.co/600x400",
-    tags: ["React", "TypeScript"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 2,
-    title: "Project Two",
-    description:
-      "Description for project two. This project is awesome. This project is so fun to do.",
-    image: "https://placehold.co/600x400",
-    tags: ["React", "TypeScript"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 3,
-    title: "Project Three",
-    description:
-      "Description for project three. This project is awesome. This project is so fun to do.",
-    image: "https://placehold.co/600x400",
-    tags: ["React", "TypeScript"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 4,
-    title: "Project Four",
-    description:
-      "Description for project four. This project is awesome. This project is so fun to do.",
-    image: "https://placehold.co/600x400",
-    tags: ["React", "TypeScript"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 5,
-    title: "Project Five",
-    description:
-      "Description for project five. This project is awesome. This project is so fun to do.",
-    image: "https://placehold.co/600x400",
-    tags: ["React", "TypeScript"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 6,
-    title: "Project Six",
-    description:
-      "Description for project six. This project is awesome. This project is so fun to do.",
-    image: "https://placehold.co/600x400",
-    tags: ["React", "TypeScript"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-];
+import { projectsSection } from "../../constants/sectionParagraphs";
 
 const ProjectsSection = () => {
   return (
@@ -78,9 +16,9 @@ const ProjectsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+          {projectsSection.projects.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
@@ -106,20 +44,24 @@ const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
+                    {project.code && (
+                      <a
+                        href={project.code}
+                        target="_blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <Github size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -129,7 +71,7 @@ const ProjectsSection = () => {
 
         <div className="text-center mt-12">
           <a
-            href="#"
+            href="https://github.com/Andrei-Cervantes"
             target="_blank"
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
           >

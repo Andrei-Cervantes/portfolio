@@ -2,7 +2,7 @@ import { IconCloud } from "../ui/IconCloud";
 import { skillsSection } from "../../constants/sectionParagraphs";
 
 const SkillsSection = () => {
-  const images = skillsSection.sluges.map(
+  const images = skillsSection.slugs.map(
     (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   );
 

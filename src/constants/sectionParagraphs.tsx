@@ -1,3 +1,14 @@
+import {
+  cv,
+  detour,
+  hangman,
+  pades,
+  salina,
+  searchsift,
+  tictactoe,
+  v4,
+} from "../assets/projects";
+
 export const aboutSection = {
   summaryTitle:
     "Passionate Web Developer who treats code like a well-balanced game build.",
@@ -65,7 +76,7 @@ export const skillsSection = {
     "A frontend developer focused on building clean, efficient, and maintainable web applications using React, Next.js, and Electron. Familiar with feature-based architecture, Zustand for state management, and Shadcn/UI for building consistent and reusable interfaces. Experienced working in Agile (Scrum) teams and collaborating with different disciplines to develop reliable and user-friendly frontends.",
     "Enjoys improving code structure, exploring frontend architecture, and finding ways to make development workflows more efficient. Constantly learning and refining skills to build applications that balance performance, scalability, and maintainability.",
   ],
-  sluges: [
+  slugs: [
     "typescript",
     "javascript",
     "react",
@@ -80,5 +91,90 @@ export const skillsSection = {
     "github",
     "visualstudiocode",
     "figma",
+  ],
+};
+
+export const projectsSection = {
+  projects: [
+    {
+      id: 1,
+      tags: ["React", "Tailwind"],
+      title: "Computer Vision",
+      description:
+        "Description for project one. This project is awesome. This project is so fun to do.",
+      code: "",
+      demoUrl: "",
+      image: cv,
+    },
+    {
+      id: 2,
+      tags: ["React", "Tailwind"],
+      title: "Detour",
+      description:
+        "Description for project one. This project is awesome. This project is so fun to do.",
+      code: "",
+      demoUrl: "",
+      image: detour,
+    },
+    {
+      id: 3,
+      tags: ["React", "Tailwind"],
+      title: "Hangman",
+      description:
+        "Description for project one. This project is awesome. This project is so fun to do.",
+      code: "",
+      demoUrl: "",
+      image: hangman,
+    },
+    {
+      id: 4,
+      tags: ["React", "Tailwind"],
+      title: "Pades",
+      description:
+        "Description for project one. This project is awesome. This project is so fun to do.",
+      code: "",
+      demoUrl: "",
+      image: pades,
+    },
+    {
+      id: 5,
+      tags: ["React", "Tailwind"],
+      title: "Salina",
+      description:
+        "Description for project one. This project is awesome. This project is so fun to do.",
+      code: "",
+      demoUrl: "",
+      image: salina,
+    },
+    {
+      id: 6,
+      tags: ["React", "Tailwind"],
+      title: "SearchSift",
+      description:
+        "Description for project one. This project is awesome. This project is so fun to do.",
+      code: "",
+      demoUrl: "",
+      image: searchsift,
+    },
+    {
+      id: 7,
+      tags: ["React", "Tailwind"],
+      title: "Tic Tac Toe",
+      description:
+        "Description for project one. This project is awesome. This project is so fun to do.",
+      code: "",
+      demoUrl: "",
+      image: tictactoe,
+    },
+    {
+      id: 8,
+      tags: ["React", "Tailwind"],
+      title: "V4",
+      description:
+        "Description for project one. This project is awesome. This project is so fun to do.",
+      code: "",
+      demoUrl: "",
+      image: v4,
+    },
   ],
 };
