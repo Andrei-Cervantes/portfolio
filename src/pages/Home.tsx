@@ -7,12 +7,14 @@ import SkillsSection from "../components/Sections/SkillsSection";
 import ProjectsSection from "../components/Sections/ProjectsSection";
 import ContactsSection from "../components/Sections/ContactsSection";
 import Footer from "../components/Common/Footer";
+import PlanetsBackground from "../components/Common/PlanetsBackground";
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <ThemeToggle />
       <StarBackground />
+      <PlanetsBackground />
       <Navbar />
       <main>
         <HeroSection />
