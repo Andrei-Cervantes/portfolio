@@ -33,7 +33,7 @@ const AboutSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
+              <a href="#contact" className="cosmic-button w-full md:w-auto">
                 {" "}
                 Get In Touch
               </a>
@@ -41,7 +41,7 @@ const AboutSection = () => {
               <a
                 href="https://drive.google.com/file/d/1mW6Ql-e_6SJ5g2tbp9KeRk36oaKYCJOQ/view?usp=drive_link"
                 target="_blank"
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 w-full md:w-auto"
               >
                 {" "}
                 Download Resume
