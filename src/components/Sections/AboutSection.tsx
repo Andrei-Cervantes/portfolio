@@ -41,11 +41,12 @@ const AboutSection = () => {
               </a>
 
               <a
-                href="#contact"
+                href="https://drive.google.com/file/d/1mW6Ql-e_6SJ5g2tbp9KeRk36oaKYCJOQ/view?usp=drive_link"
+                target="_blank"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 {" "}
-                Download CV
+                Download Resume
               </a>
             </div>
           </div>
