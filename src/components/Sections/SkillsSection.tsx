@@ -1,24 +1,8 @@
 import { IconCloud } from "../ui/IconCloud";
-
-const slugs = [
-  "typescript",
-  "javascript",
-  "react",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "express",
-  "nextdotjs",
-  "vercel",
-  "git",
-  "jira",
-  "github",
-  "visualstudiocode",
-  "figma",
-];
+import { skillsSection } from "../../constants/sectionParagraphs";
 
 const SkillsSection = () => {
-  const images = slugs.map(
+  const images = skillsSection.sluges.map(
     (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   );
 
@@ -32,21 +16,9 @@ const SkillsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center mb-12">
           <div className="space-y-4">
-            <p>
-              A frontend developer focused on building clean, efficient, and
-              maintainable web applications using React, Next.js, and Electron.
-              Familiar with feature-based architecture, Zustand for state
-              management, and Shadcn/UI for building consistent and reusable
-              interfaces. Experienced working in Agile (Scrum) teams and
-              collaborating with different disciplines to develop reliable and
-              user-friendly frontends.
-            </p>
-            <p>
-              Enjoys improving code structure, exploring frontend architecture,
-              and finding ways to make development workflows more efficient.
-              Constantly learning and refining skills to build applications that
-              balance performance, scalability, and maintainability.
-            </p>
+            {skillsSection.skillsParagraph.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
           </div>
           <div className="relative flex size-full items-center justify-center overflow-hidden">
             <div className="relative w-[400px] h-[400px]">
