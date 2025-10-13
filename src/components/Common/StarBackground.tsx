@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { type Star, type Meteor } from "../../types/starTypes";
 import { starColors } from "../../constants/starColors";
+import { useTheme } from "../../hooks/useTheme";
 
 const StarBackground = () => {
   const [stars, setStars] = useState<Star[]>([]);
   const [meteors, setMeteors] = useState<Meteor[]>([]);
+  const { isDarkMode } = useTheme();
 
   // Stars
   const generateStars = () => {
@@ -21,7 +23,9 @@ const StarBackground = () => {
         y: Math.random() * 100,
         opacity: Math.random() * 0.5 + 0.5,
         animationDuration: Math.random() * 4 + 2,
-        background: starColors[Math.floor(Math.random() * starColors.length)],
+        background: isDarkMode
+          ? starColors[Math.floor(Math.random() * starColors.length)]
+          : "white",
       });
     }
 
@@ -61,7 +65,7 @@ const StarBackground = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [isDarkMode]);
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">

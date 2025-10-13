@@ -8,13 +8,15 @@ import ProjectsSection from "../components/Sections/ProjectsSection";
 import ContactsSection from "../components/Sections/ContactsSection";
 import Footer from "../components/Common/Footer";
 import PlanetsBackground from "../components/Common/PlanetsBackground";
+import { useTheme } from "../hooks/useTheme";
 
 const Home = () => {
+  const { isDarkMode } = useTheme();
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <ThemeToggle />
       <StarBackground />
-      <PlanetsBackground />
+      {isDarkMode && <PlanetsBackground />}
       <Navbar />
       <main>
         <HeroSection />
