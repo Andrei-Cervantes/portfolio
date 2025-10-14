@@ -103,17 +103,17 @@ export const projectsSection = {
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
       code: "",
-      demoUrl: "",
+      demoUrl: "https://cvision.media-meter.in/",
       image: cv,
     },
     {
       id: 2,
-      tags: ["React", "Tailwind"],
+      tags: ["React", "Tailwind", "Zustand"],
       title: "Detour",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
       code: "",
-      demoUrl: "",
+      demoUrl: "https://app.detour.run/",
       image: detour,
     },
     {
@@ -122,38 +122,38 @@ export const projectsSection = {
       title: "Hangman",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
-      code: "",
-      demoUrl: "",
+      code: "https://github.com/Andrei-Cervantes/Hangman",
+      demoUrl: "https://hangman-iota-seven.vercel.app/",
       image: hangman,
     },
     {
       id: 4,
-      tags: ["React", "Tailwind"],
+      tags: ["React", "Bootstrap", "CSS"],
       title: "Pades",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
-      code: "",
-      demoUrl: "",
+      code: "https://github.com/Andrei-Cervantes/Project-1/tree/main",
+      demoUrl: "https://padesprinting.com/",
       image: pades,
     },
     {
       id: 5,
-      tags: ["React", "Tailwind"],
+      tags: ["React", "Tailwind", "Zustand"],
       title: "Salina",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
       code: "",
-      demoUrl: "",
+      demoUrl: "https://ai.salina.app/",
       image: salina,
     },
     {
       id: 6,
-      tags: ["React", "Tailwind"],
+      tags: ["Next.js", "Tailwind"],
       title: "SearchSift",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
       code: "",
-      demoUrl: "",
+      demoUrl: "https://search-sift.media-meter.in/",
       image: searchsift,
     },
     {
@@ -162,8 +162,8 @@ export const projectsSection = {
       title: "Tic Tac Toe",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
-      code: "",
-      demoUrl: "",
+      code: "https://github.com/Andrei-Cervantes/tictactoe_react",
+      demoUrl: "https://tictactoe-react-weld.vercel.app/",
       image: tictactoe,
     },
     {
@@ -173,7 +173,7 @@ export const projectsSection = {
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
       code: "",
-      demoUrl: "",
+      demoUrl: "https://app.media-meter.com/",
       image: v4,
     },
   ],
