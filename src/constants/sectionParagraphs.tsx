@@ -52,9 +52,9 @@ export const aboutSection = {
       ),
     },
     {
-      title: "Core System - Frontend Development",
+      title: "Crew Sync - Collaboration & Communication",
       description:
-        "Building intuitive and performant interfaces using React and Next.js. Focused on clean, efficient, and maintainable codebases.",
+        "Working effectively within cross-functional teams, translating ideas into clear technical solutions, and maintaining open communication throughout the development lifecycle.",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
