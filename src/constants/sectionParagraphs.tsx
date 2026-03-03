@@ -141,7 +141,7 @@ export const projectsSection = {
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
       code: "https://github.com/Andrei-Cervantes/Project-1/tree/main",
-      demoUrl: "https://padesprinting.com/",
+      demoUrl: "https://pades-printing-black.vercel.app/",
       image: pades,
     },
     {
