@@ -1,5 +1,6 @@
 import {
-  cv,
+  aeris,
+  atlasbuilding,
   detour,
   hangman,
   pades,
@@ -98,17 +99,24 @@ export const projectsSection = {
   projects: [
     {
       id: 1,
-      tags: ["React", "Tailwind"],
-      title: "Computer Vision",
+      tags: ["Next.js", "Tailwind", "Hero UI", "CMS Payload", "Framer Motion"],
+      title: "Atlas Building",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
       code: "",
-      demoUrl: "https://cvision.media-meter.in/",
-      image: cv,
+      demoUrl: "https://atlas-building-fe.vercel.app/",
+      image: atlasbuilding,
     },
     {
       id: 2,
-      tags: ["React", "Tailwind", "Zustand"],
+      tags: [
+        "React",
+        "Tailwind",
+        "Zustand",
+        "Eleven Labs",
+        "Framer Motion",
+        "AssemblyAI",
+      ],
       title: "Detour",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
@@ -128,7 +136,7 @@ export const projectsSection = {
     },
     {
       id: 4,
-      tags: ["React", "Bootstrap", "CSS"],
+      tags: ["React", "Bootstrap"],
       title: "Pades",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
@@ -148,7 +156,7 @@ export const projectsSection = {
     },
     {
       id: 6,
-      tags: ["Next.js", "Tailwind"],
+      tags: ["Next.js", "Tailwind", "Zustand"],
       title: "SearchSift",
       description:
         "Description for project one. This project is awesome. This project is so fun to do.",
@@ -175,6 +183,16 @@ export const projectsSection = {
       code: "",
       demoUrl: "https://app.media-meter.com/",
       image: v4,
+    },
+    {
+      id: 9,
+      tags: ["React", "Tailwind", "OpenWeather API", "Rapid API"],
+      title: "Aeris",
+      description:
+        "Description for project one. This project is awesome. This project is so fun to do.",
+      code: "",
+      demoUrl: "https://weather-app-mu-seven-19.vercel.app/",
+      image: aeris,
     },
   ],
 };
