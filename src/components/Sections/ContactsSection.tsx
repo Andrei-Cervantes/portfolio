@@ -11,8 +11,8 @@ const ContactsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Every great project starts with the right party. Whether it’s a new
-          build, an idea to optimize, or just a good dev talk — let’s connect
+          Every great project starts with the right party. Whether it's a new
+          build, an idea to optimize, or just a good dev talk — let's connect
           and make it happen.
         </p>
 
@@ -62,62 +62,46 @@ const ContactsSection = () => {
             </div>
           </div>
 
-          <div className="bg-card p-8 rounded-lg shadow-xs">
-            <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-
-            <form className="space-y-6">
-              <div>
-                <label
-                  className="block text-sm font-medium mb-2"
-                  htmlFor="name"
-                >
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="Your name here..."
-                />
-              </div>
-              <div>
-                <label
-                  className="block text-sm font-medium mb-2"
-                  htmlFor="email"
-                >
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="Your email here..."
-                />
-              </div>
-              <div>
-                <label
-                  className="block text-sm font-medium mb-2"
-                  htmlFor="message"
-                >
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                  placeholder="Your message here..."
-                />
+          <div className="bg-card p-8 rounded-lg shadow-xs h-full">
+            <form className="flex flex-col justify-between h-full">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+                <div>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                    placeholder="Your name here..."
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                    placeholder="Your email here..."
+                  />
+                </div>
+                <div>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={4}
+                    required
+                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                    placeholder="Your message here..."
+                  />
+                </div>
               </div>
 
               <button
                 type="submit"
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2"
+                  "cosmic-button w-full flex items-center justify-center gap-2",
                 )}
               >
                 Send Message
