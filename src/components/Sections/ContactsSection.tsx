@@ -1,8 +1,37 @@
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { cn } from "../../lib/utils";
 import astronaut from "../../assets/astronaut.png";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import { LoaderCircle } from "lucide-react";
 
 const ContactsSection = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSending, setIsSending] = useState(false);
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setIsSending(true);
+    emailjs
+      .sendForm(serviceId, templateId, formRef.current!, publicKey)
+      .then((result) => {
+        console.log(result.text);
+        alert("Message sent successfully!");
+        formRef.current?.reset();
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Failed to send message. Please try again later.");
+      })
+      .finally(() => {
+        setIsSending(false);
+      });
+  };
+
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -63,7 +92,11 @@ const ContactsSection = () => {
           </div>
 
           <div className="bg-card p-8 rounded-lg shadow-xs h-full">
-            <form className="flex flex-col justify-between h-full">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="flex flex-col justify-between h-full"
+            >
               <div className="space-y-6">
                 <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
                 <div>
@@ -101,11 +134,15 @@ const ContactsSection = () => {
               <button
                 type="submit"
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2",
+                  "cosmic-button w-full flex items-center justify-center gap-2 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100",
                 )}
+                disabled={isSending}
               >
                 Send Message
                 <Send size={16} />
+                {isSending && (
+                  <LoaderCircle size={16} className="ml-2 animate-spin" />
+                )}
               </button>
             </form>
           </div>
