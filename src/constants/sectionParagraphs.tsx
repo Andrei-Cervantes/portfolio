@@ -13,8 +13,8 @@ export const aboutSection = {
   summaryTitle:
     "Passionate Web Developer who treats code like a well-balanced game build.",
   summaryParagraph: [
-    "Known online as Gekk (or sometimes Eris), a gamer at heart and a developer by craft — combining both passions through a love for optimization, structure, and continuous improvement. Whether refining code architecture, improving workflows, or enhancing performance, each project is another chance to chase the next upgrade.",
-    "With experience building applications using React, Next.js, and Electron, and a focus on feature-based architecture, Zustand, and Shadcn/UI, the goal is always to create systems that are efficient, scalable, and enjoyable to work with — just like a perfectly balanced game build.",
+    "Known online as Gekk (or sometimes Eris), a gamer at heart and a developer by craft. Combining both passions through a love for optimization, structure, and continuous improvement. Whether refining code architecture, improving workflows, or enhancing performance, each project is another chance to chase the next upgrade.",
+    "With experience building applications using React, Next.js, and Electron, and a focus on feature-based architecture, Zustand, and Shadcn/UI, the goal is always to create systems that are efficient, scalable, and enjoyable to work with. Just like a perfectly balanced game build.",
   ],
   aboutSkills: [
     {

@@ -24,7 +24,7 @@ const HeroSection = () => {
             <span className="text-primary">
               Frontend Developer | Gamer | Always chasing the next upgrade.
             </span>{" "}
-            Turning code into well-balanced builds — focused on creating clean,
+            Turning code into well-balanced builds. Focused on creating clean,
             scalable, and efficient applications with the same passion used to
             optimize every in-game setup.
           </p>

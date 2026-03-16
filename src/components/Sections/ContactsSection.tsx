@@ -41,8 +41,8 @@ const ContactsSection = () => {
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Every great project starts with the right party. Whether it's a new
-          build, an idea to optimize, or just a good dev talk — let's connect
-          and make it happen.
+          build, an idea to optimize, or just a good dev talk, let's connect and
+          make it happen.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center">
