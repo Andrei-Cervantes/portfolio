@@ -4,6 +4,22 @@ import astronaut from "../../assets/astronaut.png";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { LoaderCircle } from "lucide-react";
+import ContactItem from "../Common/ContactItem";
+
+const contactItem = [
+  {
+    icon: <Mail className="h-6 w-6 text-primary" />,
+    text: "andrei29.cervantes@gmail.com",
+  },
+  {
+    icon: <Phone className="h-6 w-6 text-primary" />,
+    text: "+63 915 650 6046",
+  },
+  {
+    icon: <MapPin className="h-6 w-6 text-primary" />,
+    text: "Manila, Philippines",
+  },
+];
 
 const ContactsSection = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -58,35 +74,9 @@ const ContactsSection = () => {
                 Contact Information
               </h3>
               <div className="flex items-center justify-center gap-4 transition-all duration-500">
-                {/* Email */}
-                <div className="flex items-center gap-2 group cursor-pointer transition-all duration-500 overflow-hidden hover:w-[280px] w-[56px]">
-                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 shrink-0">
-                    <Mail className="h-6 w-6 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground group-hover:text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
-                    andrei29.cervantes@gmail.com
-                  </p>
-                </div>
-
-                {/* Phone */}
-                <div className="flex items-center gap-2 group cursor-pointer transition-all duration-500 overflow-hidden hover:w-[200px] w-[56px]">
-                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 shrink-0">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground group-hover:text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
-                    +63 915 650 6046
-                  </p>
-                </div>
-
-                {/* Location */}
-                <div className="flex items-center gap-2 group cursor-pointer transition-all duration-500 overflow-hidden hover:w-[220px] w-[56px]">
-                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 shrink-0">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground group-hover:text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
-                    Manila, Philippines
-                  </p>
-                </div>
+                {contactItem.map((item) => (
+                  <ContactItem icon={item.icon} text={item.text} />
+                ))}
               </div>
             </div>
           </div>
