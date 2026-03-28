@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# 🚀 Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive developer portfolio showcasing projects, skills, and expertise in frontend development. Built with cutting-edge technologies for optimal performance, maintainability, and user experience.
 
-Currently, two official plugins are available:
+## 🎯 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio is a comprehensive showcase of web development projects and skills, featuring a responsive design with dark mode support, smooth animations, and an interactive user interface. It demonstrates proficiency in modern frontend architecture, state management, and UI/UX principles.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core Framework
 
-## Expanding the ESLint configuration
+- **[React 19](https://react.dev/)** - Modern UI library with latest React features
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript for better code quality
+- **[Vite](https://vitejs.dev/)** - Next-generation build tool for fast development and optimized builds
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Styling & UI
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - Utility-first CSS framework for rapid UI development
+- **[Shadcn/UI](https://ui.shadcn.com/)** - High-quality React components built on Radix UI and Tailwind
+- **[Lucide React](https://lucide.dev/)** - Beautiful, consistent icon library
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### State Management & Effects
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+- **React Router DOM** - Client-side routing and navigation
+- **React Scroll Parallax** - Smooth parallax scrolling effects
+
+### Animations & Interactions
+
+- **Framer Motion** - Declarative animations and gestures (via component integration)
+- **Class Variance Authority** - Type-safe component variants
+- **CLSX** - Utility for conditional className management
+
+### Developer Experience
+
+- **[ESLint](https://eslint.org/)** - Code quality and consistency linting
+- **TypeScript Strict Mode** - Maximum type safety
+
+## ✨ Features
+
+- 🌙 **Dark Mode Support** - Theme toggle with persistent user preferences
+- 📱 **Fully Responsive Design** - Optimized for mobile, tablet, and desktop
+- ⚡ **Performance Optimized** - Fast load times and smooth interactions
+- 🎨 **Interactive UI** - Parallax effects, smooth transitions, and dynamic components
+- 📧 **Contact Integration** - Email.js powered contact form
+- 🔗 **Project Showcase** - Detailed project cards with links to live demos and source code
+- ♿ **Accessible** - Built with semantic HTML and accessibility best practices
+
+## 📂 Project Structure
+
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+src/
+├── components/          # Reusable React components
+│   ├── Common/         # Shared components (Navbar, Footer, Cards, etc.)
+│   ├── Sections/       # Page section components (Hero, About, Projects, etc.)
+│   └── ui/             # UI library components
+├── pages/              # Page components
+├── context/            # React Context for theme management
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions and helpers
+├── constants/          # Constant values and configurations
+├── types/              # TypeScript type definitions
+├── assets/             # Images, icons, and static files
+└── App.tsx             # Root component
 ```
